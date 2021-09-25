@@ -6,8 +6,7 @@ nav{
     background-color: rgb(88, 130, 207); 
 }
 a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none!important;
 }
 img{
     height: 550px;
@@ -81,10 +80,6 @@ img{
 /*MODIFICADORES*/
 .article-h2{
     text-align: center;
-}
-.fieldset-form{
-    border-style: solid;
-    padding: 15px;
 }
 .roboto-p{
     font-size: x-large;
