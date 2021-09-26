@@ -12,6 +12,9 @@ img{
     height: 550px;
     width: 100%;
 }
+#nav-mobile{
+    display: none;
+}
 /*FONTS*/
 .style{
     font-family: 'style script', 'sans-serif';
@@ -33,7 +36,6 @@ img{
     font-family: 'style script', 'sans-serif';
     font-size: 45px;
     text-align: center;
-    transform: skewX(340deg);
 }
 .nav_lista{
     margin-top: 0px;
@@ -96,6 +98,26 @@ button:hover{
 
 
 
- 
+@media (max-width: 576px) {
+    .ul_li {
+        display: block;
+        width: 100%;
+        margin-left: -15px;
+        margin-bottom: 5px;
+    }
+    .nav_lista{
+        display: none;
+    }
+    #header-web{
+        display: none;
+    }
+    #nav-mobile{
+        display: block;
+    }
+    .brand{
+        font-size: xx-large !important;
+    }
+}
+    
 
 
