@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My journey</title>
-    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Style+Script&display=swap" rel="stylesheet">
@@ -13,9 +13,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header_footer_color">
-        <a href="./index.html" class="header_span link-light">My journey</a>
+    <header class="header-web header_footer_color">
+        <a href="./index.html" class="link-light">My journey</a>
     </header>
+    <nav class="nav-mobile" class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand style brand" href="./index.html">My journey</a>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     <nav>
         <ul class="nav_lista">
             <li class="nav_lista_item"><a href="./index.html" class="link-light"> Inicio</a></li>
@@ -26,21 +43,21 @@
         </ul>
     </nav>
     <main>
-        <h1 class="header_span">¡Conoce la Argentina!</h1>
+        <h1>¡Conoce la Argentina!</h1>
         <div class="div_img container">
             <img class="img-rounded" src="./Imagenes/Argentina.jpg" alt="Paisajes nacionales">
         </div>
         <section>
             <fieldset class="fieldset-form">
-                <legend class="roboto">Planea tu viaje</legend>
+                <legend>Planea tu viaje</legend>
                 <form>
-                    <label for="Fida" class="roboto">Fecha de ida</label>
+                    <label for="Fida">Fecha de ida</label>
                     <input type="date" id="Fida">
                     <br>
-                    <label for="Fre" class="roboto">Fecha de regreso</label>
+                    <label for="Fre">Fecha de regreso</label>
                     <input type="date" id="Fre">
                     <br>
-                    <label for="npasa" class="roboto">Numero de pasajeros</label>
+                    <label for="npasa">Numero de pasajeros</label>
                     <select id="npasa">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -54,33 +71,33 @@
         </section>
         <section>
             <article>
-                <h2 class="roboto"> Region del litoral</h2>
+                <h2> Region del litoral</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/iguazu.jpg" class="article_div_img" alt="Cataratas del iguazu">
-                            <h3 class="roboto roboto-p">Misiones</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/iguazu.jpg"alt="Cataratas del iguazu">
+                            <h3 class="roboto-p">Misiones</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/Corrientes 2.jpg" class="article_div_img" alt="Corrientes">
-                            <h3 class="roboto roboto-p">Corazon Correntino</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/Corrientes 2.jpg" alt="Corrientes">
+                            <h3 class="roboto-p">Corazon Correntino</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/Rosario.jpg" class="article_div_img" alt="Rosario">
-                            <h3 class="roboto roboto-p">Santa Fe</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/Rosario.jpg" alt="Rosario">
+                            <h3 class="roboto-p">Santa Fe</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/corrientes.jpg" class="article_div_img" alt="Corrientes">
-                            <h3 class="roboto roboto-p">Corrientes</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/corrientes.jpg" alt="Corrientes">
+                            <h3 class="roboto-p">Corrientes</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
@@ -88,99 +105,99 @@
                 </ul>
             </article>
             <article>
-                <h2 class="roboto"> Region del norte</h2>
+                <h2> Region del norte</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="Imagenes/aconcagua.jpg" class="article_div_img" alt="Mendoza">
-                            <h3 class="roboto roboto-p">Mendoza</h3>
+                    <li>
+                        <div>
+                            <img src="Imagenes/aconcagua.jpg" alt="Mendoza">
+                            <h3 class="roboto-p">Mendoza</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/Resistenci.jpg" class="article_div_img" alt="Resistencia">
-                            <h3 class="roboto roboto-p">Chaco</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/Resistenci.jpg" alt="Resistencia">
+                            <h3 class="roboto-p">Chaco</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/Salta.jpg" class="article_div_img" alt="Salta">
-                            <h3 class="roboto roboto-p">Salta</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/Salta.jpg" alt="Salta">
+                            <h3 class="roboto-p">Salta</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/jujuy.jpg" class="article_div_img" alt="Jujuy">
-                            <h3 class="roboto roboto-p">Jujuy</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/jujuy.jpg" alt="Jujuy">
+                            <h3 class="roboto-p">Jujuy</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
                 </ul>
             </article>
             <article>
-                <h2 class="roboto"> Region de Cuyo</h2>
+                <h2> Region de Cuyo</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
+                    <li>
+                        <div>
                             <img src="./Imagenes/mendoza.jpg" class="article_div_img" alt="Mendoza">
-                            <h3 class="roboto roboto-p">Mendoza</h3>
+                            <h3 class="roboto-p">Mendoza</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/aconcagua.jpg" class="article_div_img" alt="Aconcagua">
-                            <h3 class="roboto roboto-p">Aconcagua</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/aconcagua.jpg" alt="Aconcagua">
+                            <h3 class="roboto-p">Aconcagua</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/San juan.jpg" class="article_div_img" alt="San juan">
-                            <h3 class="roboto roboto-p">San Juan</h3>
+                    <li>
+                        <div >
+                            <img src="./Imagenes/San juan.jpg" alt="San juan">
+                            <h3 class="roboto-p">San Juan</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/viñedos.jpg" class="article_div_img" alt="Ruta del vino">
-                            <h3 class="roboto roboto-p">Ruta del vino</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/viñedos.jpg" alt="Ruta del vino">
+                            <h3 class="roboto-p">Ruta del vino</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
                 </ul>
             </article>
             <article>
-                <h2 class="roboto"> Region de la Patagonia</h2>
+                <h2> Region de la Patagonia</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/perito moreno.jpg" class="article_div_img" alt="Glaciar Perito moreno">
-                            <h3 class="roboto roboto-p">Perito moreno</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/perito moreno.jpg" alt="Glaciar Perito moreno">
+                            <h3 class="roboto-p">Perito moreno</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/bariloche.jpg" class="article_div_img" alt="Bariloche">
-                            <h3 class="roboto roboto-p">Bariloche</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/bariloche.jpg" alt="Bariloche">
+                            <h3 class="roboto-p">Bariloche</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/ushuaia.jpg" class="article_div_img" alt="Ushuaia">
-                            <h3 class="roboto roboto-p">Ushuaia</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/ushuaia.jpg" alt="Ushuaia">
+                            <h3 class="roboto-p">Ushuaia</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/mountain ar.jpg" class="article_div_img" alt="Neuquen">
-                            <h3 class="roboto roboto-p">Neuquen</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/mountain ar.jpg" alt="Neuquen">
+                            <h3 class="roboto-p">Neuquen</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
@@ -189,64 +206,64 @@
             <article>
                 <h2 class="roboto">Buenos Aires</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/puerto madero.jpg" class="article_div_img" alt="Puerto madero">
-                            <h3 class="roboto roboto-p">Puerto madera</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/puerto madero.jpg" alt="Puerto madero">
+                            <h3 class="roboto-p">Puerto madera</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/buenos-aires.jpg" class="article_div_img" alt="Buenos aires">
-                            <h3 class="roboto roboto-p">Buenos aires</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/buenos-aires.jpg" alt="Buenos aires">
+                            <h3 class="roboto-p">Buenos aires</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/merlo.jpg" class="article_div_img" alt="Merlo">
-                            <h3 class="roboto roboto-p">Merlo</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/merlo.jpg" alt="Merlo">
+                            <h3 class="roboto-p">Merlo</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/Caba.jpg" class="article_div_img" alt="CABA">
-                            <h3 class="roboto roboto-p">C.a.b.a</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/Caba.jpg" alt="CABA">
+                            <h3 class="roboto-p">C.a.b.a</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
                 </ul>
             </article>
             <article>
-                <h2 class="roboto">Cordoba</h2>
+                <h2>Cordoba</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/carloz-paz.jpg" class="article_div_img" alt="Carlos paz">
-                            <h3 class="roboto roboto-p">Carlos paz</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/carloz-paz.jpg" alt="Carlos paz">
+                            <h3 class="roboto-p">Carlos paz</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/cordoba.jpg" class="article_div_img" alt="Lago cordobes">
-                            <h3 class="roboto roboto-p">Cordoba</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/cordoba.jpg" alt="Lago cordobes">
+                            <h3 class="roboto-p">Cordoba</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/Paisaje cordobez.jpg" class="article_div_img" alt="Montaña de cordoba">
-                            <h3 class="roboto roboto-p">Cordoba Natural</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/Paisaje cordobez.jpg" alt="Montaña de cordoba">
+                            <h3 class="roboto-p">Cordoba Natural</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/cordoba puente.jpg" class="article_div_img" alt="Paisaje de cordoba">
-                            <h3 class="roboto roboto-p">Alturas de cordoba</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/cordoba puente.jpg" alt="Paisaje de cordoba">
+                            <h3 class="roboto-p">Alturas de cordoba</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>

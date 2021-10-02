@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My journey</title>
-    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Style+Script&display=swap" rel="stylesheet">
@@ -13,9 +13,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header_footer_color">
+    <header class="header-web header_footer_color">
         <a href="./index.html" class="header_span link-light">My journey</a>
     </header>
+    <nav class="nav-mobile" class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand style brand" href="./index.html">My journey</a>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     <nav>
         <ul class="nav_lista">
             <li class="nav_lista_item"><a href="./index.html" class="link-light"> Inicio</a></li>
@@ -26,7 +43,7 @@
         </ul>
     </nav>
     <main>
-        <h1 class="header_span">¡Conoce el mundo!</h1>
+        <h1>¡Conoce el mundo!</h1>
         <div class="div_img container">
             <img class="img-rounded" src="./Imagenes/Internacionales.jpg" alt="Vuelos internacionales">
         </div>
@@ -34,13 +51,13 @@
             <fieldset class="fieldset-form">
                 <legend class="roboto">Planea tu viaje</legend>
                 <form>
-                    <label for="Fida" class="roboto">Fecha de ida</label>
+                    <label for="Fida">Fecha de ida</label>
                     <input type="date" id="Fida">
                     <br>
-                    <label for="Fre" class="roboto">Fecha de regreso</label>
+                    <label for="Fre">Fecha de regreso</label>
                     <input type="date" id="Fre">
                     <br>
-                    <label for="npasa" class="roboto">Numero de pasajeros</label>
+                    <label for="npasa">Numero de pasajeros</label>
                     <select id="npasa">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -54,165 +71,165 @@
         </section>
         <section>
             <article>
-                <h2 class="roboto">America</h2>
+                <h2>America</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/rio-de-janeiro.jpg" class="article_div_img" alt="Rio de Janeiro">
-                            <h3 class="roboto roboto-p">Rio de Janeiro</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/rio-de-janeiro.jpg"  alt="Rio de Janeiro">
+                            <h3 class="roboto-p">Rio de Janeiro</h3>
+                            <button class="btn btn-primary">Reservar</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/eeuu.jpg" alt="Estados Unidos">
+                            <h3 class="roboto-p">Estados Unidos</h3>
+                            <button class="btn btn-primary ">Reservar</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/canada.jpg" alt="Canada">
+                            <h3 class="roboto-p">Canada</h3>
+                            <button class="btn btn-primary">Reservar</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/machu-picchu.jpg" alt="Peru">
+                            <h3 class="roboto-p">Peru</h3>
+                            <button class="btn btn-primary">Reservar</button>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>Europa</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/italy.jpg"  alt="Italia">
+                            <h3 class="roboto-p">Italia</h3>
+                            <button class="btn btn-primary">Reservar</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/inglaterra.jpg" alt="Inglaterra">
+                            <h3 class="roboto-p">Inglaterra</h3>
+                            <button class="btn btn-primary ">Reservar</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/paris.jpg" alt="Paris">
+                            <h3 class="roboto-p">Paris</h3>
+                            <button class="btn btn-primary ">Reservar</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/valencia-esp.jpg" alt="España">
+                            <h3 class="roboto-p">Español</h3>
+                            <button class="btn btn-primary ">Reservar</button>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>Asia</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/filipinas.jpg" alt="Filipinas">
+                            <h3 class="roboto-p">Filipinas</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/eeuu.jpg" class="article_div_img" alt="Estados Unidos">
-                            <h3 class="roboto roboto-p">Estados Unidos</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/tokyo.jpg" alt="Tokio">
+                            <h3 class="roboto-p">Japon</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/canada.jpg" class="article_div_img" alt="Canada">
-                            <h3 class="roboto roboto-p">Canada</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/mongolia.jpg" alt="Mongolia">
+                            <h3 class="roboto-p">Mongolia</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/machu-picchu.jpg" class="article_div_img" alt="Peru">
-                            <h3 class="roboto roboto-p">Peru</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/busan.jpg" alt="Corea">
+                            <h3 class="roboto-p">Corea</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
                 </ul>
             </article>
             <article>
-                <h2 class="roboto">Europa</h2>
+                <h2>Africa</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/italy.jpg" class="article_div_img" alt="Italia">
-                            <h3 class="roboto roboto-p">Italia</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/ghana africa.jpg" alt="Ghana">
+                            <h3 class="roboto-p">Ghana</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/inglaterra.jpg" class="article_div_img" alt="Inglaterra">
-                            <h3 class="roboto roboto-p">Inglaterra</h3>
+                    <li !--!>
+                        <div>
+                            <img src="./Imagenes/ciudad del cabo.jpg" alt="Sudafrica">
+                            <h3 class="roboto-p">Sudafrica</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/paris.jpg" class="article_div_img" alt="Paris">
-                            <h3 class="roboto roboto-p">Paris</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/africa marruecos.jpg" alt="Marruecos">
+                            <h3 class="roboto-p">Marruecos</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/valencia-esp.jpg" class="article_div_img" alt="España">
-                            <h3 class="roboto roboto-p">Español</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/nairobi africa.jpg" alt="Nairobi">
+                            <h3 class="roboto-p">Nairobi</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
                 </ul>
             </article>
             <article>
-                <h2 class="roboto">Asia</h2>
+                <h2>Oceania</h2>
                 <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/filipinas.jpg" class="article_div_img" alt="Filipinas">
-                            <h3 class="roboto roboto-p">Filipinas</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/sydney.jpg" alt="Sidney">
+                            <h3 class="roboto-p">Sidney</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/tokyo.jpg" class="article_div_img" alt="Tokio">
-                            <h3 class="roboto roboto-p">Japon</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/urulu.jpg" alt="Monte urulu">
+                            <h3 class="roboto-p">Australia natural</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/mongolia.jpg" class="article_div_img" alt="Mongolia">
-                            <h3 class="roboto roboto-p">Mongolia</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/perth.jpg" alt="Perth">
+                            <h3 class="roboto-p">Perth</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/busan.jpg" class="article_div_img" alt="Corea">
-                            <h3 class="roboto roboto-p">Corea</h3>
-                            <button class="btn btn-primary buttons">Reservar</button>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h2 class="roboto">Africa</h2>
-                <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/ghana africa.jpg" class="article_div_img" alt="Ghana">
-                            <h3 class="roboto roboto-p">Ghana</h3>
-                            <button class="btn btn-primary buttons">Reservar</button>
-                        </div>
-                    </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/ciudad del cabo.jpg" class="article_div_img" alt="Sudafrica">
-                            <h3 class="roboto roboto-p">Sudafrica</h3>
-                            <button class="btn btn-primary buttons">Reservar</button>
-                        </div>
-                    </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/africa marruecos.jpg" class="article_div_img" alt="Marruecos">
-                            <h3 class="roboto roboto-p">Marruecos</h3>
-                            <button class="btn btn-primary buttons">Reservar</button>
-                        </div>
-                    </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/nairobi africa.jpg" class="article_div_img" alt="Nairobi">
-                            <h3 class="roboto roboto-p">Nairobi</h3>
-                            <button class="btn btn-primary buttons">Reservar</button>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h2 class="roboto">Oceania</h2>
-                <ul>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/sydney.jpg" class="article_div_img" alt="Sidney">
-                            <h3 class="roboto roboto-p">Sidney</h3>
-                            <button class="btn btn-primary buttons">Reservar</button>
-                        </div>
-                    </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/urulu.jpg" class="article_div_img" alt="Monte urulu">
-                            <h3 class="roboto roboto-p">Australia natural</h3>
-                            <button class="btn btn-primary buttons">Reservar</button>
-                        </div>
-                    </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/perth.jpg" class="article_div_img" alt="Perth">
-                            <h3 class="roboto roboto-p">Perth</h3>
-                            <button class="btn btn-primary buttons">Reservar</button>
-                        </div>
-                    </li>
-                    <li class="ul_li">
-                        <div class="article_div">
-                            <img src="./Imagenes/melbourne.jpg" class="article_div_img" alt="Melbourne">
-                            <h3 class="roboto roboto-p">Melbourne</h3>
+                    <li>
+                        <div>
+                            <img src="./Imagenes/melbourne.jpg" alt="Melbourne">
+                            <h3 class="roboto-p">Melbourne</h3>
                             <button class="btn btn-primary buttons">Reservar</button>
                         </div>
                     </li>

@@ -111,7 +111,7 @@ button:hover{
     #header-web{
         display: none;
     }
-    #nav-mobile{
+    .nav-mobile{
         display: block;
     }
     .brand{

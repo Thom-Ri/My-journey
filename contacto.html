@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My journey</title>
-    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Style+Script&display=swap" rel="stylesheet">
@@ -13,9 +13,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header_footer_color">
-        <a href="./index.html" class="header_span link-light">My journey</a>
+    <header class="header-web header_footer_color">
+        <a href="./index.html" class="link-light">My journey</a>
     </header>
+    <nav class="nav-mobile" class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand style brand" href="./index.html">My journey</a>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     <nav>
         <ul class="nav_lista">
             <li class="nav_lista_item"><a href="./index.html" class="link-light"> Inicio</a></li>
@@ -27,54 +44,54 @@
     </nav>
     <main>
        <section>
-            <h1 class="header_span">Un gran viaje necesita una gran compania, viaja con los mejores</h1>
+            <h1>Un gran viaje necesita una gran compania, viaja con los mejores</h1>
             <div class="div_img container">
                 <img class="img-rounded" src="./Imagenes/Personal.jpg" class="img-contacto" alt="Nuestros empleados te estan esperando">
             </div>
         </section>
         <section class="section-grid">
             <article>
-                <h2 class="article-h2 roboto">25 años siendo tu mejor compañero de viajes</h2>
-                <p class="roboto roboto-p">
-                    Desde su fundacion en 1995 por Cerapio Argelli, <span class="header_span">Myjourney</span> ha crecido hasta convertirse en una empresa de renombre en el turismo argentino.
+                <h2>25 años siendo tu mejor compañero de viajes</h2>
+                <p class="roboto-p">
+                    Desde su fundacion en 1995 por Cerapio Argelli, <span>Myjourney</span> ha crecido hasta convertirse en una empresa de renombre en el turismo argentino.
                 </p>  
-                <p class="roboto roboto-p">
+                <p class="roboto-p">
                     Somos una compañia compuesta de profesionales del turismo comprometidos a hacer el viaje de tus sueños realidad.
                 </p>    
-                <p class="roboto roboto-p">Estamos listos para brindarte el mejor acompañamiento en tus aventuras por Argentina y el mundo.</p>            
+                <p class="roboto-p">Estamos listos para brindarte el mejor acompañamiento en tus aventuras por Argentina y el mundo.</p>            
             </article>
            <article>
-               <h2 class="article-h2 roboto">Contactanos y comenza tu aventura</h2>
+               <h2>Contactanos y comenza tu aventura</h2>
                <div class="container">
                    <h2>Formulario de contacto</h2>
                    <form action="#">
                        <div class="form-group">
-                            <label for="unom" class="roboto">Nombre</label>
+                            <label for="unom">Nombre</label>
                             <input type="text"id="unom">
                             <br> 
                        </div>
                        <div class="form-group">
-                            <label for="uape" class="roboto">Apellido</label>
+                            <label for="uape">Apellido</label>
                             <input type="text"id="uape">
                             <br>
                        </div>
                        <div class="form-group">
-                            <label for="unum" class="roboto">Telefono</label>
+                            <label for="unum">Telefono</label>
                             <input type="number" id="unum">
                             <br>
                        </div>
                        <div class="form-group">
-                            <label for="umail" class="roboto">E-mail</label>
+                            <label for="umail">E-mail</label>
                             <input type="text"id="umail">
                             <br>
                        </div>
                        <div class="form-group">
-                            <label for="chce" class="roboto">Deseo recibir las ultimas ofertas de la empresa</label>
+                            <label for="chce">Deseo recibir las ultimas ofertas de la empresa</label>
                             <input type="checkbox" name="contac" id="chce">
                             <br>
                        </div>
                        <div class="form-group">
-                            <label for="ucon" class="roboto">Consulta</label>
+                            <label for="ucon">Consulta</label>
                             <textarea id="ucon" cols="30" rows="10"></textarea>
                             <br>
                        </div>
