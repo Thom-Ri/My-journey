@@ -65,6 +65,22 @@ article{
         font-size: initial;
     }
 }
+.travelform{
+    background-color: #5882cf;         
+    color: white;
+    height: 50px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.travelform_div{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.travelform_button{
+    @extend button;
+    margin-left: 45px;
+}
 .nav-mobile{
     display: none;
 }
@@ -105,6 +121,9 @@ button:hover{
     background-color: rgb(60, 175, 251);
     color: rgb(58, 56, 56);
 }
+.forse{
+    background-color: #5882cf;
+}
 
 @media (max-width: 576px) {
     main{
@@ -113,8 +132,14 @@ button:hover{
                 display: block;
                 width: 100%;
                 margin-left: -15px;
-                margin-bottom: 5px;
+                margin-bottom: 20px;
             }
+        }
+    }
+    body{
+        img{
+            height: $alto + 300;
+            margin-bottom: 20px;
         }
     }
     .header-web{
@@ -138,10 +163,32 @@ button:hover{
             color: whitesmoke;
             font-family:$style-font;
             display: inline-block;
-            margin-left: -100px;
         }
         button{
-            margin-right: -220px
+            font-family:$roboto-font;
+            
         }
+    }
+    .dropdown-item{
+        font-size: x-large;
+        font-family: $roboto-font;
+    }
+    .section-grid{
+        display: block;
+    }
+    .travelform{
+        background-color: #5882cf;         
+        color: white;
+        height: 110px;
+        margin-top:20px;
+        margin-bottom: 20px;
+        padding-top: 10px
+    }
+    .travelform_div{
+        padding: 15px;
+        display:contents;
+    }
+    .travelform_button{
+        margin-left: 45px;
     }
 }

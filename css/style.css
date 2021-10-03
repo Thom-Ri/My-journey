@@ -39,7 +39,7 @@ article div {
   article div img {
     height: 250px; }
 
-article button {
+article button, article .travelform_button {
   background-color: #5882cf;
   text-align: center;
   color: white;
@@ -47,6 +47,21 @@ article button {
   height: 30px;
   width: 30%;
   font-size: initial; }
+
+.travelform {
+  background-color: #5882cf;
+  color: white;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.travelform_div {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around; }
+
+.travelform_button {
+  margin-left: 45px; }
 
 .nav-mobile {
   display: none; }
@@ -84,16 +99,22 @@ article button {
 .roboto-p {
   font-size: x-large; }
 
-button:hover {
+button:hover, .travelform_button:hover {
   background-color: #3caffb;
   color: #3a3838; }
+
+.forse {
+  background-color: #5882cf; }
 
 @media (max-width: 576px) {
   main ul li {
     display: block;
     width: 100%;
     margin-left: -15px;
-    margin-bottom: 5px; }
+    margin-bottom: 20px; }
+  body img {
+    height: 400px;
+    margin-bottom: 20px; }
   .header-web {
     display: none; }
   .brand {
@@ -108,7 +129,23 @@ button:hover {
     .nav-mobile a {
       color: whitesmoke;
       font-family: "style script", "sans-serif";
-      display: inline-block;
-      margin-left: -100px; }
-    .nav-mobile button {
-      margin-right: -220px; } }
+      display: inline-block; }
+    .nav-mobile button, .nav-mobile .travelform_button {
+      font-family: "roboto condensed", "sans-serif"; }
+  .dropdown-item {
+    font-size: x-large;
+    font-family: "roboto condensed", "sans-serif"; }
+  .section-grid {
+    display: block; }
+  .travelform {
+    background-color: #5882cf;
+    color: white;
+    height: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px; }
+  .travelform_div {
+    padding: 15px;
+    display: contents; }
+  .travelform_button {
+    margin-left: 45px; } }
