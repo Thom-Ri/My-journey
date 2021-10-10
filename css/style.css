@@ -1,12 +1,25 @@
 body {
   background-color: #f8feff; }
   body nav {
-    background-color: #5882cf; }
+    background-color: #5882cf;
+    height: 80px;
+    margin-bottom: 10px; }
   body a {
     text-decoration: none !important; }
   body img {
     height: 550px;
     width: 100%; }
+  body footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    list-style: none;
+    width: 100%; }
+    body footer a {
+      text-decoration: none;
+      color: white; }
+    body footer ul {
+      list-style: none; }
 
 main h1 {
   font-family: "style script", "sans-serif";
@@ -46,7 +59,8 @@ article button, article .travelform_button {
   border-radius: 10%;
   height: 30px;
   width: 30%;
-  font-size: initial; }
+  font-size: initial;
+  padding-bottom: 30px !important; }
 
 .travelform {
   background-color: #5882cf;
@@ -75,26 +89,27 @@ article button, article .travelform_button {
   margin-top: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  width: 75%;
+  margin-left: 75px; }
 
 .nav_lista_item {
-  list-style: none;
   font-size: larger;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "roboto condensed", "sans-serif"; }
+  font-family: "roboto condensed", "sans-serif";
+  margin-right: 150px; }
 
 .div_img {
   display: flex;
   justify-content: center; }
 
+.carousel_img {
+  width: 100%; }
+
 .img-contacto {
   width: 90%; }
 
-.section-grid {
-  display: grid;
-  grid-template-rows: auto  auto;
-  grid-template-columns: 50% 50%; }
+.historia, .contactform {
+  text-align: center;
+  margin-bottom: 20px; }
 
 .roboto-p {
   font-size: x-large; }
@@ -115,6 +130,13 @@ button:hover, .travelform_button:hover {
   body img {
     height: 400px;
     margin-bottom: 20px; }
+  body footer {
+    display: flex;
+    flex-direction: column;
+    list-style: none; }
+    body footer a {
+      text-decoration: none;
+      color: white; }
   .header-web {
     display: none; }
   .brand {
@@ -123,6 +145,8 @@ button:hover, .travelform_button:hover {
     display: inline-block; }
   .nav_lista {
     display: none; }
+  .navdesktop {
+    display: none !important; }
   .nav-mobile {
     display: block;
     text-align: center; }
