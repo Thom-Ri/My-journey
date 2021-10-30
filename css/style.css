@@ -177,9 +177,7 @@ button:hover {
     padding-top: 10px; }
   .travelform_div {
     padding: 15px;
-    display: contents; }
-  .travelform_button {
-    margin-left: 45px; } }
+    display: contents; } }
 
 @media (max-width: 768px) and (min-width: 577px) {
   main ul {
@@ -242,9 +240,7 @@ button:hover {
     margin-right: 10px; }
   section button {
     height: 30px;
-    margin-right: 10px; }
-  .travelform_button {
-    margin-left: 45px; } }
+    margin-right: 10px; } }
 
 @media (max-width: 991px) and (min-width: 769px) {
   article button {
