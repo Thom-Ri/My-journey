@@ -4,6 +4,10 @@ body {
     background-color: #5882cf;
     height: 80px;
     margin-bottom: 10px; }
+  body h1 {
+    font-family: "style script", "sans-serif";
+    font-size: 45px;
+    text-align: center; }
   body a {
     text-decoration: none !important; }
   body img {
@@ -21,11 +25,6 @@ body {
     body footer ul {
       list-style: none; }
 
-main h1 {
-  font-family: "style script", "sans-serif";
-  font-size: 45px;
-  text-align: center; }
-
 main ul li {
   width: 24%;
   display: inline-block; }
@@ -35,11 +34,7 @@ header a {
   font-size: 45px;
   text-align: center; }
 
-article h2 {
-  text-align: center;
-  font-family: "roboto condensed", "sans-serif"; }
-
-article h3 {
+article h2, article h3 {
   text-align: center;
   font-family: "roboto condensed", "sans-serif"; }
 
@@ -52,7 +47,7 @@ article div {
   article div img {
     height: 250px; }
 
-article button, article .travelform_button {
+article button {
   background-color: #5882cf;
   text-align: center;
   color: white;
@@ -114,7 +109,7 @@ article button, article .travelform_button {
 .roboto-p {
   font-size: x-large; }
 
-button:hover, .travelform_button:hover {
+button:hover {
   background-color: #3caffb;
   color: #3a3838; }
 
@@ -122,11 +117,14 @@ button:hover, .travelform_button:hover {
   background-color: #5882cf; }
 
 @media (max-width: 576px) {
-  main ul li {
-    display: block;
-    width: 100%;
-    margin-left: -15px;
-    margin-bottom: 20px; }
+  main ul {
+    padding-left: 2px; }
+    main ul li {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px; }
+  article button {
+    width: 50%; }
   body img {
     height: 400px;
     margin-bottom: 20px; }
@@ -154,7 +152,72 @@ button:hover, .travelform_button:hover {
       color: whitesmoke;
       font-family: "style script", "sans-serif";
       display: inline-block; }
-    .nav-mobile button, .nav-mobile .travelform_button {
+    .nav-mobile button {
+      font-family: "roboto condensed", "sans-serif"; }
+  .dropdown-item {
+    font-size: x-large;
+    font-family: "roboto condensed", "sans-serif"; }
+  .section-grid {
+    display: block; }
+  section input {
+    height: 30px;
+    margin-right: 10px; }
+  section select {
+    height: 30px;
+    margin-right: 10px; }
+  section button {
+    height: 30px;
+    margin-right: 10px; }
+  .travelform {
+    background-color: #5882cf;
+    color: white;
+    height: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px; }
+  .travelform_div {
+    padding: 15px;
+    display: contents; }
+  .travelform_button {
+    margin-left: 45px; } }
+
+@media (max-width: 768px) and (min-width: 577px) {
+  main ul {
+    display: inline-block;
+    padding-left: 2px; }
+    main ul li {
+      display: inline-block;
+      width: 48%;
+      margin-left: 5px;
+      margin-bottom: 20px; }
+  body img {
+    height: 400px;
+    margin-bottom: 20px; }
+  body footer {
+    display: flex;
+    flex-direction: column;
+    list-style: none; }
+    body footer a {
+      text-decoration: none;
+      color: white; }
+  .header-web {
+    display: none; }
+  .brand {
+    font-size: xx-large !important; }
+  nav div {
+    display: inline-block; }
+  .nav_lista {
+    display: none; }
+  .navdesktop {
+    display: none !important; }
+  .nav-mobile {
+    display: block;
+    text-align: center; }
+    .nav-mobile a {
+      color: whitesmoke;
+      font-family: "style script", "sans-serif";
+      display: inline-block; }
+    .nav-mobile button {
       font-family: "roboto condensed", "sans-serif"; }
   .dropdown-item {
     font-size: x-large;
@@ -171,5 +234,46 @@ button:hover, .travelform_button:hover {
   .travelform_div {
     padding: 15px;
     display: contents; }
+  section input {
+    height: 30px;
+    margin-right: 10px; }
+  section select {
+    height: 30px;
+    margin-right: 10px; }
+  section button {
+    height: 30px;
+    margin-right: 10px; }
   .travelform_button {
     margin-left: 45px; } }
+
+@media (max-width: 991px) and (min-width: 769px) {
+  article button {
+    width: 50%; }
+  nav a {
+    font-family: "style script", "sans-serif";
+    font-size: x-large;
+    padding-left: 2px; }
+  .nav_lista {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    margin-left: 0px;
+    align-items: center;
+    color: #dee2e6;
+    background-color: #343a40;
+    border-color: rgba(0, 0, 0, 0.15); }
+  section input {
+    height: 30px;
+    margin-right: 10px; }
+  section select {
+    height: 30px;
+    margin-right: 10px; }
+  section button {
+    height: 30px;
+    margin-right: 10px; }
+  .travelform {
+    height: 10%; }
+  .travelform_div {
+    width: 100%;
+    height: 69px; } }
